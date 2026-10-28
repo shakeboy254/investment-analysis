@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>投资技术与收益分析</title>
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --text: #1a1d21;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --accent: #b91c1c;
+    --accent-soft: #fef2f2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 48px 24px 64px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: .5px; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0; }
+  .meta { margin-top: 14px; font-size: 13px; color: var(--muted); }
+  .meta a { color: var(--accent); text-decoration: none; }
+  .meta a:hover { text-decoration: underline; }
+  h2 { font-size: 17px; margin: 36px 0 16px; padding-left: 10px; border-left: 3px solid var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+  .card {
+    display: block; background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 18px 20px; text-decoration: none; color: inherit; transition: border-color .15s, transform .15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card .no { font-size: 12px; color: var(--accent); font-weight: 600; letter-spacing: 1px; }
+  .card .title { font-size: 15px; font-weight: 600; margin: 6px 0 4px; }
+  .card .desc { font-size: 13px; color: var(--muted); margin: 0; }
+  .empty {
+    background: var(--accent-soft); border: 1px dashed #fca5a5; border-radius: 10px;
+    padding: 26px; text-align: center; color: #991b1b; font-size: 14px;
+  }
+  .note { font-size: 13px; color: var(--muted); margin-top: 10px; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>投资技术与收益分析</h1>
+    <p class="sub">个人投资方法论与收益归因记录 · 仅研究用途，不构成投资建议</p>
+    <p class="meta">
+      <a href="https://github.com/shakeboy254/investment-analysis" target="_blank" rel="noopener">GitHub 仓库</a>
+      &nbsp;·&nbsp; 数据截至 2026-10 &nbsp;·&nbsp; 阈值不得放宽
+    </p>
+  </header>
+
+  <h2>方法论</h2>
+  <div class="grid">
+    <a class="card" href="https://github.com/shakeboy254/investment-analysis/blob/main/docs/01-%E4%BC%B0%E5%80%BC%E4%B8%89%E9%94%9A%E5%AE%9A%E4%B8%8E%E4%B8%80%E5%BA%95%E7%BA%BF.md" target="_blank" rel="noopener">
+      <div class="no">01</div>
+      <div class="title">估值三锚定与一底线</div>
+      <p class="desc">盈利锚 / 现金流锚 / 资产锚 + 审计商誉底线</p>
+    </a>
+    <a class="card" href="https://github.com/shakeboy254/investment-analysis/blob/main/docs/02-%E9%AB%98%E8%82%A1%E6%81%AF%E4%B8%89%E7%9C%8B%E4%B8%80%E6%8E%92%E9%99%A4%E4%B8%8ETTM%E5%8F%A3%E5%BE%84.md" target="_blank" rel="noopener">
+      <div class="no">02</div>
+      <div class="title">高股息三看一排除 + TTM 口径</div>
+      <p class="desc">现金流覆盖、分红率、TTM 派息率公式与实证</p>
+    </a>
+    <a class="card" href="https://github.com/shakeboy254/investment-analysis/blob/main/docs/03-%E4%BB%B7%E5%80%BC%E9%99%B7%E9%98%B1%E7%BA%A2%E7%BA%BF%E6%B8%85%E5%8D%95.md" target="_blank" rel="noopener">
+      <div class="no">03</div>
+      <div class="title">价值陷阱红线清单</div>
+      <p class="desc">派息/扣非 &gt; 100% 一票否决，红黄灯分档</p>
+    </a>
+    <a class="card" href="https://github.com/shakeboy254/investment-analysis/blob/main/docs/04-%E7%BC%A9%E9%87%8F%E5%8F%8C%E7%A1%AE%E8%AE%A4%E4%B8%8E%E5%85%AD%E7%BB%B4%E8%AF%84%E5%88%86.md" target="_blank" rel="noopener">
+      <div class="no">04</div>
+      <div class="title">缩量双确认与六维评分</div>
+      <p class="desc">周/日双确认、地量、100 分制权重</p>
+    </a>
+    <a class="card" href="https://github.com/shakeboy254/investment-analysis/blob/main/docs/05-%E4%B8%AD%E9%95%BF%E7%BA%BF%E5%9F%8B%E4%BC%8F%E7%BA%AA%E5%BE%8B.md" target="_blank" rel="noopener">
+      <div class="no">05</div>
+      <div class="title">中长线埋伏纪律</div>
+      <p class="desc">五层漏斗、底部 6 信号、三层止损</p>
+    </a>
+  </div>
+
+  <h2>日报</h2>
+  <div class="empty">
+    暂无已发布报告<br>
+    <span class="note">将 HTML 报告放入 <code>site/reports/</code> 并推送，即可在此展示</span>
+  </div>
+
+  <footer>
+    本页面仅用于个人研究记录，不构成任何投资建议或要约。历史数据不代表未来表现，据此操作风险自担。
+  </footer>
+</div>
+</body>
+</html>
