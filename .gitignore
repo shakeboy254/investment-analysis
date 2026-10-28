@@ -1,0 +1,40 @@
+# ===== 隐私与账户（禁止入库，公开仓库红线）=====
+sim_account.json
+watch_guoci.json
+watch_pool_*.json
+watch_pool_*
+*.sqlite
+*.sqlite3
+*.db
+.env
+.env.*
+*secret*
+*token*
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ===== 数据与产物（按需保留模板，不入真实数据）=====
+data/
+output/
+*.log
+*.tmp
+
+# ===== 密钥 =====
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.ppk
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
+desktop.ini
